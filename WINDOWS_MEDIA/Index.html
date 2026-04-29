@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="kali widgets this is clone genrated by KALI">
+    <title>KALI widgets</title>
+    <link rel="icon" href="/GLOBAL/IMGS/favicon.png" />
+    <link rel="stylesheet" href="/GLOBAL/STYLES/Utlity.css">
+    <link rel="stylesheet" href="STYLES/Style.css" />
+</head>
+
+<body>
+    <!-- 
+  -------------------------------------------------- 
+  navbar 
+  ------------------------------------------------- 
+  -->
+    <header class="navbar-container">
+        <nav class="navbar">
+            <a href="#">
+                <img src="/GLOBAL/IMGS/favicon.png" title="KALI" alt="KALI" />
+            </a>
+            <div class="tabs">
+                <a href="KaliHome.html">Home</a>
+                <a href="VideoPlayer.html">My Videos</a>
+                <a href="Ratting_On_Website.html">Give Feedback</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 
+    -------------------------------------------------------------
+  widgets 
+   --------------------------------------------------------------
+  -->
+    <section class="container" id="mySidenav">
+        <form action="post">
+            <div class="online">
+                <div class="widname">
+                    <div class="sec sec1">
+                        <h6>Wi-Fi</h6>
+                        <h6>Bluetooth</h6>
+                        <h6>Airplane</h6>
+                    </div>
+                </div>
+                <div class="widname">
+                    <div class="sec sec2">
+                        <h6>BattrySaver</h6>
+                        <h6>NightLight</h6>
+                        <h6>Accessibility</h6>
+                    </div>
+                </div>
+                <!-- 
+        ----------------------------------------------------
+        buttons 
+        ----------------------------------------------------
+        -->
+                <div class="radio-group">
+                    <div class="wi1">
+                        <span class="wifi">
+                            <label>
+                                <input type="checkbox" class="togle" name="optionType1">
+                                <img class="imgs" src="/GLOBAL/IMGS/ICON/wifi.png" alt="Wifi" />
+                            </label>
+                            <label>
+                                <img src="/GLOBAL/IMGS/ICON/showmore.png" onclick="openWifi()" id="Wifi"
+                                    class="showmore" alt="btnImg" />
+                            </label>
+                        </span>
+                        <span class="bt">
+                            <label>
+                                <input type="checkbox" class="togle" name="optionType2">
+                                <img src="/GLOBAL/IMGS/ICON/bt.png" class="imgs" alt="Bluetooth" />
+                            </label>
+                            <label>
+                                <img src="/GLOBAL/IMGS/ICON/showmore.png" id="BT" onclick="openBT()" class="showmore"
+                                    alt="btnImg" />
+                            </label>
+                        </span>
+                        <span class="flight">
+                            <label>
+                                <input type="checkbox" class="togle" name="option">
+                                <img src="/GLOBAL/IMGS/ICON/flight.png" class="win" alt="Airplane Mode" />
+                            </label>
+                        </span>
+                    </div>
+                    <div class="wi2">
+                        <span class="battry-sever">
+                            <label>
+                                <input type="checkbox" class="togle" name="option">
+                                <img src="/GLOBAL/IMGS/ICON/battry saver.png" class="win" alt="Battry Saver" />
+                            </label>
+                        </span>
+                        <span class="brit">
+                            <label>
+                                <input type="checkbox" class="togle" name="option">
+                                <img src="/GLOBAL/IMGS/ICON/brit.png" class="win" alt="brit" />
+                            </label>
+                        </span>
+                        <span class="acces">
+                            <label>
+                                <img src="/GLOBAL/IMGS/ICON/acces.png" name="option" onclick="openAC()" class="win"
+                                    alt="Accessibility" />
+                            </label>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="sliders">
+                    <a class="iconpic b" href="#">
+                        🔅
+                    </a>
+                    <input type="range" class="range" name="britnesh" title="britnesh" id="braitnesh" />
+                    <a class="iconpic c" href="#"><img class="invert" src="/GLOBAL/IMGS/ICON/volume.svg"
+                            title="speekers" alt="speeker" /></a>
+                    <input type="range" class="range sound" name="sound" /><a class="iconpic d" href="#"><img
+                            src="/GLOBAL/IMGS/ICON/sound output.png" title="sound output" alt="sound" /></a>
+                </div>
+                <!-- 
+        -------------------------------------------------
+        footer
+        -------------------------------------------------
+         -->
+                <div class="footer">
+                    <img class="battrystats" src="/GLOBAL/IMGS/ICON/battry status.png" alt="" />
+                    <img class="sattigs" src="/GLOBAL/IMGS/ICON/sattigs.png" alt="" />
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <!--  
+  ---------------------------------------------------
+  Widgets open btn 
+  ---------------------------------------------------
+   -->
+    <footer>
+        <div class="widget-btn">
+            <a class="open-widgets" onclick="openNav()" title="Open Widgets" href="#"><img
+                    src="/GLOBAL/IMGS/ICON/widgets.png" alt="widgets" /></a>
+        </div>
+    </footer>
+
+    <form class="container container2" id="wifiopen">
+        <div>
+            <span id="wifiback" class="back" onclick="closeWifi()"><img src="/GLOBAL/IMGS/ICON/back.png"
+                    alt="back" /></span>
+            <label class="backbtn" for="wifiback">Wifi</label>
+            <iframe class="chackbox" id="in_Wifi" src="Chackbox.html" height="70" width="70" frameborder="0"></iframe>
+        </div>
+    </form>
+
+    <form class="container container2" id="BTOpen">
+        <div>
+            <span id="BTback" class="back" onclick="closeBT()"><img src="/GLOBAL/IMGS/ICON/back.png"
+                    alt="back" /></span>
+            <label class="backbtn" for="BTback">Bluetooth</label>
+            <iframe class="chackbox" id="in_BT" src="Chackbox.html" height="70" width="70" frameborder="0"></iframe>
+        </div>
+    </form>
+
+    <form class="container container2" id="ACopen">
+        <div>
+            <span id="accesBack" class="back" onclick="closeAC()"><img src="/GLOBAL/IMGS/ICON/back.png"
+                    alt="back" /></span>
+            <label class="backbtn" for="accesBack">Accessibility</label>
+            <div id="cont3">
+            </div>
+        </div>
+    </form>
+    <!-- 
+  -----------------------------------------------------
+  version
+  -----------------------------------------------------
+    -->
+    <div class="version">
+        <p class="version_name"><a class="version-head" href="/ABOUT">Version:</a> 0.3. add chackbox & Responsive</p>
+    </div>
+    <script src="JS/Index.js"></script>
+</body>
+
+</html>

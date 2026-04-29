@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('/GLOBAL/STYLES/Colors.css');
+
+*:focus {
+    outline: none;
+}
+
+body {
+    position: relative;
+    background: var(--kali-tube-seccolor);
+    font-family: "Roboto", sans-serif;
+}
+
+/* navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: var(--kali-tube-color);
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    justify-content: space-between;
+}
+
+.site {
+    display: flex;
+    align-items: center;
+}
+
+.toggle-btn {
+    width: 20px;
+    height: 10px;
+    position: relative;
+    margin: 0 0 0 8px;
+    cursor: pointer;
+}
+
+.toggle-btn img {
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.logo {
+    margin: 6px 8px 0;
+}
+
+.search-box {
+    position: relative;
+    max-width: 600px;
+    height: 35px;
+    display: flex;
+}
+
+.search-bar {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    width: 350px;
+    height: 100%;
+    border: 2px solid var(--kali-tube-borders);
+    background: var(--kali-tube-seccolor);
+    color: var(--kali-tube-text);
+    font-size: 16px;
+    padding: 0 20px;
+}
+
+.search-btn {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    width: 70px;
+    height: 100%;
+    background: var(--kali-tube-seccolor);
+    border: 2px solid var(--kali-tube-borders);
+    border-left: none;
+    padding: 5px 0;
+}
+
+.search-btn img {
+    height: 100%;
+}
+
+.voice-btn {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background: var(--kali-tube-bgcolor);
+    border: 2px solid var(--kali-tube-borders);
+    margin-left: 15px;
+    padding: 5px 0;
+}
+
+.voice-btn img {
+    height: 100%;
+}
+
+.voice-btn:hover {
+    background: var(--kali-tube-hover);
+}
+
+.user-dp {
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.user-dp img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user_options {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    gap: 10px;
+}
+
+.user_options .icon {
+    height: 80%;
+    cursor: pointer;
+}
+
+/*side bar*/
+.side_bar {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    min-width: 160px;
+    width: 160px;
+    height: calc(100vh - 50px);
+    background: var(--kali-tube-color);
+    padding-right: 10px;
+}
+
+.links {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: var(--kali-tube-sectext);
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.6s;
+}
+
+.side_bar a img {
+    height: 25px;
+}
+
+.links:hover,
+.links:focus,
+.links:active {
+    color: var(--kali-tube-hovertext);
+    background: var(--kali-tube-hover);
+}
+
+.links:focus:hover {
+    color: white;
+    background: linear-gradient(21deg, #acfb6b, #4cd4f6, #ff31e8);
+}
+
+.seperator {
+    border: none;
+    border-bottom: 1px solid var(--kali-tube-seperator);
+    margin: 15px 0;
+}
+
+/* filters */
+#filters {
+    position: fixed;
+    left: 160px;
+    top: 50px;
+    width: calc(100% - 70px);
+    height: 50px;
+    background: var(--kali-tube-color);
+    border-top: 1px solid var(--kali-tube-borders);
+    border-bottom: 1px solid var(--kali-tube-secborders);
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#filters::-webkit-scrollbar {
+    display: none;
+}
+
+.filter-options {
+    flex: 0 0 auto;
+    padding: 6px 10px;
+    border-radius: 14px;
+    background: var(--kali-tube-seccolor);
+    border: 1px solid var(--kali-tube-borders);
+    text-transform: capitalize;
+    margin-right: 10px;
+    color: var(--kali-tube-filters);
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#filters .filter-options:nth-child(1) {
+    color: var(--kali-tube-active);
+    background: var(--kali-tube-secactive);
+    font-weight: bold;
+    transition: all 0.6s;
+}
+
+.filter-options.active:hover {
+    background: linear-gradient(10deg, #46c14e, #b6fff9, #30d0fc, #06ff59);
+}
+
+/* content */
+.video-container {
+    width: calc(100% - 160px);
+    margin-top: 90px;
+    margin-left: 160px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 0px 5px;
+    overflow-x: hidden;
+}
+
+.video {
+    min-height: 280px;
+    height: auto;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.content {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.channel-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.title {
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+}
+
+.channel-name {
+    font-size: 14px;
+    margin: 2px 0;
+    color: var(--kali-tube-sectext);
+}
+
+.video a {
+    text-decoration: none;
+    color: var(--kali-tube-text);
+}
+
+h5 {
+    font-size: 1.1em;
+}
+
+@media screen and (min-width:1756px) {
+    .video-container {
+        grid-template-columns: repeat(auto-fill, minmax(410px, 1fr));
+    }
+}
+
+@media screen and (max-width:1330px) {
+    .side_bar {
+        min-width: 28px;
+        width: 55px;
+    }
+
+    h5 {
+        display: none;
+    }
+
+    #filters {
+        left: 55px;
+        width: 95%;
+    }
+
+    .video-container {
+        width: calc(100% - 60px);
+        margin-left: 55px;
+    }
+
+    .thumbnail {
+        max-height: 180px;
+    }
+}
+
+@media screen and (min-width:1124px) {
+    .video-container {
+        grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    }
+}
+
+@media screen and (max-width:614px) {
+    .thumbnail {
+        height: 270px;
+    }
+
+    .search-bar {
+        width: 15px;
+    }
+
+    .search-btn {
+        width: 35px;
+    }
+}
+
+@media screen and (max-width:354px) {
+    .thumbnail {
+        height: 140px;
+    }
+}

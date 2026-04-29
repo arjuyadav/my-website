@@ -1,0 +1,53 @@
+            <!-- <div class="window" id="NotePad" onfocus="focusThewindow()" onblur="focusOffwindow()">
+                <div class="header">
+                    <div class="app-title">NotePad</div>
+                    <div class="controls"> <button onclick="minimizeWindow('NotePad')">--</button> <button
+                            onclick="restoreWindow('NotePad')">▢</button> <button class="closeBTN"
+                            onfocus="close_Window('NotePad')">x</button> </div>
+                </div>
+                <div class="content"> <textarea placeholder="You can type here...  experimental">experimental</textarea>
+                </div>
+            </div>
+            <div class="window" id="Settings" onfocus="focusThewindow()" onblur="focusOffwindow()">
+                <div class="header">
+                    <div class="app-title">Settings</div>
+                    <div class="controls"> <button onclick="minimizeWindow('Settings')">--</button> <button
+                            onclick="restoreWindow('Settings')">▢</button> <button class="closeBTN"
+                            onfocus="close_Window('Settings')">x</button> </div>
+                </div>
+                <div class="content">
+                    <div class="buttonsHaiBhai"> <button>change the desktop Background</button> <button>change the
+                            color</button> <button>connect the bluetooth</button> <button>connect the experimental
+                            WIFI</button> <button>connect the Other display</button> <button>connect the Other
+                            display</button> <button>connect the Other display</button> <button>connect the Other
+                            display</button> <button>change the font size</button> <button>save</button> </div>
+                </div>
+            </div>
+            <div class="window" id="File_Explorer">
+                <div class="header">
+                    <div class="app-title">File Explorer</div>
+                    <div class="controls"> <button onclick="minimizeWindow('File_Explorer')">--</button> <button
+                            onclick="restoreWindow('File_Explorer')">▢</button> <button class="closeBTN"
+                            onclick="close_Window('File_Explorer')">x</button> </div>
+                </div>
+                <div class="content"> <button>create Folders</button> <button>create Files</button> <button>copy
+                        Files</button> <button>Past Files</button> <button>experimental experimental </button> </div>
+            </div> -->
+            <!-- <div class="window" id="Browser">
+                <div class="header">
+                    <div class="app-title">Flare Browser</div>
+                    <div class="controls"> <button onclick="minimizeWindow('Browser')">--</button> <button
+                            onclick="restoreWindow('Browser')">▢</button> <button class="closeBTN"
+                            onclick="close_Window('Browser')">x</button> </div>
+                </div>
+                <div class="content">  <iframe
+                        src="/DRAGON_OS/"></iframe> </div>
+            </div> -->
+            <!-- <div class="window PoP-Up">
+                <div class="header">
+                    <div class="app-title">Pop Up Window</div>
+                    <div class="controls"> <button onclick="minimizeWindow('.pop')">--</button> <button class="closeBTN"
+                            onclick="close_Window('.pop')">x</button> </div>
+                </div>
+                <div class="content"></div>
+            </div> -->

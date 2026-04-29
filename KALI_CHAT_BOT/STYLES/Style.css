@@ -1,0 +1,116 @@
+@import url(/GLOBAL/STYLES/Colors.css);
+
+body {
+    font-family: Arial, sans-serif;
+    background:var(--background);
+    color: var(--Body-whitesmoke-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+body::selection {
+    background:--Selec-color-Back;
+    color: var(--word-color);
+}
+
+#chatbox {
+    background:var(--chat-Box-Back);
+    width: 60vw;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: var(--ChatBox-Shadow);
+    display: flex;
+    flex-direction: column;
+}
+
+
+#chat-content::-webkit-scrollbar {
+    width: 8px;
+    background: var(--chat-Content-Back);
+    transition: all 0.7s ease-out;
+}
+
+#chat-content::-webkit-scrollbar-thumb {
+    width: 6px;
+    background:var(--word-color);
+    border-radius: 4px;
+}
+
+#chat-content {
+    max-height: 75vh;
+    min-height: 70px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    border-radius: 7px;
+}
+
+#user-input {
+    padding: 10px;
+    max-width: 70%;
+    width: auto;
+    outline: none;
+    border: none;
+    background:var(--chat-Content-Back);
+    color: var(--User-Input-color);
+    border-radius: 5px;
+}
+
+#user-input::placeholder {
+    color: var(--User-Input-color);
+}
+
+#send-button {
+    padding: 8px;
+    width: 70px;
+    background:var(--Chat-Send);
+    color: var(--Chat-Send-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    left: 45vw;
+    bottom: 35px;
+}
+
+#send-button:hover {
+    background:var(--Hover-Chat-Send);
+}
+
+.message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.message a {
+    color: var(--message-link-color);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.user {
+    background: var(--Chat-User);
+    text-align: right;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+::-webkit-scrollbar {
+    height: 6px;
+    background: var(--scroll-bar-chatbot);
+}
+
+::-webkit-scrollbar-thumb {
+    height: 4px;
+    background: var(--scroll-thumb-chatbot);
+}
+
+.bot {
+    background: var(--Chat-bot);
+    text-align: left;
+    overflow-y: hidden;
+    overflow-x: auto;
+}

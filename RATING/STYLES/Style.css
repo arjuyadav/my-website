@@ -1,0 +1,113 @@
+body {
+    height: 100vh;
+    /* background: linear-gradient(-120deg,#2e2a30e2, #2f3e45e8, #1e2c39e9 , #0f3e30e8); */
+    background: var(--chat-Box-Back);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    margin-top: 10px;
+    color: var(--ratting-h2);
+    font-size: 2.2em;
+}
+
+form {
+    position: relative;
+    padding: 0px 3px;
+    width: 350px;
+    height: 480px;
+    border: 2px solid;
+    box-shadow: 0 4px 26px 10px var(--ratting-form);
+    border-radius: 8px;
+    border: 1px solid var(--ratting-form-border);
+    background:  var(--ratting-form-gradient);
+}
+
+.input:focus {
+    outline: none;
+    background: var(--ratting-focus-input);
+}
+
+.input:hover {
+    background: var(--ratting-hov-input);
+}
+
+.input::placeholder {
+    color: var(--ratting-input-placeholder);
+}
+
+.input {
+    text-align: center;
+    width: 300px;
+    margin: 15px 0px;
+    padding: 5px 0px;
+    color: var(--ratting-input-placeholder);
+    background: var(--ratting-input-back);
+    font-size: 23px;
+    border-radius: 7px;
+    font-weight: bolder;
+    border: 1px solid var(--ratting-input-border);
+}
+
+input[type="email"] {
+    text-transform: lowercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input[type="submit"]:hover {
+    background: var(--ratting-Btn-Submit-hov);
+    color: var(--ratting-Btn-Submit-hov-color);
+}
+
+input[type="submit"]:active {
+    font-size: 19px;
+    width: 290px;
+}
+
+input[type="submit"] {
+    width: 300px;
+    margin: 20px;
+    padding: 5px 0px;
+    color: var(--ratting-Btn-Submit-color);
+    background: var(--ratting-Btn-Submit-Back);
+    border: 1px solid var(--ratting-Btn-Submit-Border);
+    border-top: none;
+    border-radius: 7px;
+    font-size: 23px;
+    font-weight: bolder;
+    position: absolute;
+    bottom: 0;
+    left: 3px;
+    transition: all .4s;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.stars {
+    text-decoration: none;
+    color: var(--ratting-Btns-stars-color);
+    font-size: 2.8rem;
+    transition: all .4s;
+}
+
+.stars:hover {
+    color: var(--ratting-Btns-stars-color-hov);
+    font-size: 3.3rem;
+}
+
+.stars:focus {
+    color: var(--ratting-Btns-stars-color-Focus);
+    font-size: 3.4rem;
+}

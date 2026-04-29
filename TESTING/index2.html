@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Form with Events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Form with JavaScript Events</h1>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" 
+                   onfocus="focusInput()" onblur="blurInput()" onkeydown="keyDownHandler(event)" 
+                   onkeyup="keyUpHandler(event)" oninput="inputChangeHandler()">
+            <span id="username-message"></span>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" 
+                   onfocus="focusInput()" onblur="blurInput()">
+            <span id="email-message"></span>
+
+            <button onclick="submitForm()">Submit</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Interactive Forms | All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

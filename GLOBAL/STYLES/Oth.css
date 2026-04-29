@@ -1,0 +1,117 @@
+:root {
+    /* height */
+    --Height-desktop: calc(100% - 45px);
+    --Height-windows-content: calc(100% - 25px);
+    --Main-height: 15px;
+    /* width */
+    --Main-width: 15px;
+    --border-radius: 0.5rem;
+}
+
+body.dark,
+html.dark,
+body.black,
+html.black,
+:root {
+    /* backgrounds */
+    --body-back: #2f3542;
+    --nav-back: #35424a;
+
+
+
+
+
+
+    --Main-background: #111;
+    --Main-background-sec: #111;
+    --Main-background-primery: #111;
+    --background: rgb(0, 0, 0);
+    --background-sec: #29272761;
+    --background-primery: #111;
+    --scroll-bar: #876161;
+    --scroll-thumb: rgb(107, 13, 124);
+    --scroll-track: rgb(116, 120, 118);
+    --scroll-button: rgb(248, 57, 206);
+    --Chart-Card-Header: #26ff79;
+    --Chart-Card-Body: #58585846;
+    --Chart-Card-Footer: rgb(233, 53, 53);
+    --Chart-Cont-Back: rgba(20, 23, 25, 1);
+    --Chart-BTN-B: #00000091;
+    /* background gradient page */
+    --background-gargent-Desktop: linear-gradient(15deg, #1e1e1e, #3b3b3b);
+    --background-gargent-header: linear-gradient(30deg, #000000d4, #000000ea);
+    --background-gargent-taskbar: linear-gradient(45deg, #2d2c2caa, #2e2d2dd2, #2a2a2ab3);
+    --background-gargent-sec: linear-gradient(30deg, #1e1e1ecd, #161515e3);
+    --background-gar-chart-btn: linear-gradient(45deg,rgb(0, 249, 33),#3bceff);
+    /* background make for only one  page */
+    --chat-bot-background: #111;
+    --scroll-thumb-background:green;
+    /* colors */
+    --Chart-Card-Header-C: #ffffff;
+    --Chart-BTN-C: #f4f4f4;
+    --marq-link-color: rgb(61, 165, 255);
+    --secondary-color: #4f616368;
+    --body-color: aliceblue;
+    --clock-color: #34d74a;
+    --primary-color: #8a31e2;
+    --overlay-color: #1f1a1bd7;
+    --kali-color: #ffffffdb;
+    --text-color: #ffffff;
+    --Logo-color: #2ff6a3;
+    --thame-color: #f7ff5d;
+
+
+    --main-color: ;
+    --color: #fff;
+    --main-color-Primery: ;
+    --main-color-sec: ;
+    --chart-foot-btn-color: rgb(111, 8, 255);
+    --color-Primery: rgb(255, 255, 255);
+    --color-sec: rgb(88, 255, 177);
+    --links-color-in-chart: rgb(255, 0, 225);
+    /* colors make for only one page */
+    --chat-bot-color: #111;
+    /* glow colors */
+    --open-btn-glow1: 0 10px 20px rgba(125, 36, 150, 0.9);
+    --open-btn-glow2: 0 10px 20px rgba(122, 8, 167, 0.9);
+    /* all for only kali-tube */
+    --kali-tube-color: #ffffff;
+    --kali-tube-seccolor: #f0f0f0;
+    --kali-tube-bgcolor: aqua;
+    --kali-tube-othcolor: black;
+    --kali-tube-seperator: #dbdbdb;
+    --kali-tube-text: #242424;
+    --kali-tube-sectext: #979797;
+    --kali-tube-othtext: #979797;
+    --kali-tube-borders: #dbdbdb;
+    --kali-tube-secborders: #dbdbdb;
+    --kali-tube-filters: #242424;
+    --kali-tube-secfilters: #242424;
+    --kali-tube-hover: rgba(0, 0, 0, 0.1);
+    --kali-tube-sechover: rgba(0, 0, 0, 0.1);
+    --kali-tube-active: rgb(0, 0, 0);
+    --kali-tube-secactive: linear-gradient(50deg, #46c14e, #b6fff9, #30d0fc, #00ff54);
+    --kali-tube-color-dark: #131313;
+    --kali-tube-seccolo-dark: #000000;
+    --kali-tube-othcolor-dark: #974964;
+    --kali-tube-seperator-dark: #00d5f0;
+    --kali-tube-text-dark: #43ff71;
+    --kali-tube-sectext-dark: #10958a;
+    --kali-tube-othtext-dark: #b03b3b;
+    --kali-tube-borders-dark: #25554e;
+    --kali-tube-secborders-dark: #e078e5;
+    --kali-tube-filters-dark: #79c6f3;
+    --kali-tube-secfilters-dark: #423838;
+    --kali-tube-hover-dark: rgb(0 212 134);
+    --kali-tube-sechover-dark: rgba(0, 0, 0, 0.1);
+    --kali-tube-active-dark: rgb(0 0 0);
+    --kali-tube-secactive-dark: linear-gradient(0deg, #46c14e, #b6fff9, #30d0fc, #00ff54);
+    /* Borders */
+    --Chart-Card: 1px solid rgb(255, 255, 255);
+    --border: 1px solid rgba(255, 255, 255, 0.168);
+    --border-sec: 0.5px solid rgba(12, 12, 53, 0.666);
+
+    /* Hovers */
+    --hover-background: #f4f4f420;
+    --hover-background-sec: #b1b0b012;
+}

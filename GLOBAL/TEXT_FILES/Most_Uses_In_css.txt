@@ -1,0 +1,60 @@
+\*  css */
+for selection Selected Text Styles Edit.
+
+Element :selection{
+  color: (value);
+  background:rgba(value);
+}
+
+for Hover Effect Styles
+
+Element :hover{
+    background: rgba(value);
+}
+
+for Placeholder Styles.
+
+Element :Placeholder{
+    background: rgb(red , blue , green);
+}
+
+for checkbox or radio buttons color change.
+
+Element {
+    accent-color: #ff0000;
+}
+
+Mlty background:color Effect
+
+Element {
+    background: linear-gradient(0deg, transparent, transparent, #ff2770, #ff2770, #ff2770);
+}
+
+text background:Effect
+h1 {
+    font-size: 5em;
+    background: -webkit-linear-gradient(#25d8b1, #e2bbf0);
+    -webkit-background-clip-: text;
+    -webkit-text-fill-color: transparent;
+}
+
+css proparty for Mlty color websites Like dark & light
+@media (prefers-color-scheme: dark) {
+    body {
+        background:black;
+    }
+}
+
+@media (prefers-color-scheme: ligth) {
+    body {
+        background:wheat;
+    }
+}
+
+css media Quary for responsive
+
+@media (max-width:450px) {
+	Element {
+		display: Flex !important; \* !important is optinal if you write this code in the last */
+	}
+}

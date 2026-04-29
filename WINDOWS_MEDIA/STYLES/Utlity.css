@@ -1,0 +1,32 @@
+* {
+    font-family: Arial, sans-serif;
+    user-select: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.invert {
+    filter: invert(1);
+}
+
+::-webkit-scrollbar {
+    background:555;
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background:green;
+}
+
+::-webkit-scrollbar-button {
+    background:rgb(55, 75, 231);
+}
+
+::-webkit-scrollbar-track {
+    background:rgb(120, 130, 132);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background:rgb(39, 155, 64);
+}

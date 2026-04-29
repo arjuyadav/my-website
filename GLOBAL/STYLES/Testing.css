@@ -1,0 +1,52 @@
+body.light,
+html.light,
+body.white,
+html[data-theme="light"] {
+    /* backgrounds */
+    --scroll-bar: #111;
+    --scroll-thumb: rgb(65, 65, 65);
+    --scroll-track: rgb(146, 141, 141);
+    --scroll-button: rgb(6, 100, 231);
+    --Main-background: #f4f4f4;
+    --Main-background-sec: #f5f5f5;
+    --body-back: #b0b0b0;
+    --Main-background-primery: #f4f4f4;
+    --Chart-Card-Body: #131313;
+    --Chart-Card-Header: #33e67895;
+    --Chart-Card-Footer: rgba(255, 83, 223, 0.834);
+    --Chart-Cont-Back: rgba(220, 220, 220, 0.8);
+    --nav-back: #f3f3f3;
+    --background-sec: #f3f3f3;
+    --thame-back: #7a3cffe7;
+    --background-primery: #f4f4f4;
+    --footer-back: #f4f4f4;
+    --Chart-BTN-B: #f4f4f466;
+    /* background make for only one page */
+    --chat-bot-background: #111;
+    /* colors */
+    --Chart-Card-Header-C: #000000;
+    --Chart-BTN-C: #444;
+    --clock-color: #a134d7;
+    --links-color-in-chart: rgb(111, 12, 203);
+    --chart-foot-btn-color: rgb(0, 0, 0);
+    --main-color: #171616;
+    --main-color-Primery: #1a1919;
+    --text-color: #000;
+    --marq-link-color: rgb(38, 5, 201);
+    --body-color: rgb(12, 30, 46);
+    --kali-color: #212020e6;
+    --Logo-color: #400a92;
+    --thame-color: #d0ff00;
+    --footer-color: #000000f3;
+    --main-color-sec: ;
+    --color: ;
+    --color-Primery: #111;
+    --color-sec: rgb(130, 76, 0);
+    /* colors make for only one page */
+    --chat-bot-color: #111;
+    /* borders */
+    --Chart-Card: 1px solid black;
+    /* glows */
+    --open-btn-glow1: 0 10px 20px rgba(81, 168, 255, 0.929);
+    --open-btn-glow2: 0 10px 20px rgba(0, 255, 213, 0.922);
+}

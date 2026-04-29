@@ -1,0 +1,110 @@
+@import url(/GLOBAL/STYLES/Colors.css);
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--color);
+    background: var(--body-back);
+}
+
+main {
+    padding: 10px;
+}
+
+.animated-text {
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 200px;
+}
+
+.animated-text span {
+    position: relative;
+}
+
+.animated-text span::before {
+    content: "";
+    color: var(--Logo2-color);
+    animation: words 20s infinite;
+}
+
+.animated-text span::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background: var(--body-back);
+    border-left: 2px solid  var(--Logo2-color);
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to {
+        border-left: 2px solid var(--body-back);
+    }
+}
+
+@keyframes words {
+
+    0%,
+    20% {
+        content: "Coder";
+    }
+
+    21%,
+    40% {
+        content: "Gamer";
+    }
+
+    41%,
+    60% {
+        content: "Developer";
+    }
+
+    61%,
+    80% {
+        content: "Student";
+    }
+
+    81%,
+    100% {
+        content: "Designer";
+    }
+}
+
+@keyframes typing {
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95% {
+        width: 0;
+    }
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85% {
+        width: calc(100% + 8px);
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background: var(--footer-back);
+    color: var(--footer-color);
+}

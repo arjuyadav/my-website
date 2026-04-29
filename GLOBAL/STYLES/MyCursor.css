@@ -1,0 +1,27 @@
+
+.cursor {
+    position: fixed;
+    top: -10px;
+    left: -10px;
+    z-index: 99999;
+}
+
+.arrow {
+    position: absolute;
+    border-left: 10px solid rgb(0, 0, 0);
+    border-top: 10px solid rgb(0, 0, 0);
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    transform: rotateY(64deg) rotateX(23deg) rotateZ(33deg);
+}
+
+.Cursor_seek {
+    height: 10px;
+    transform: rotateZ(-45deg);
+    width: 7px;
+    background: black;
+    border-radius: 50px;
+    position: absolute;
+    top: -4px;
+    left: -3px;
+}

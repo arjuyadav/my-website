@@ -1,0 +1,210 @@
+@import url(/GLOBAL/STYLES/Colors.css);
+
+* {
+    transition: background, color 0.5s;
+}
+
+body {
+    color: var(--color-Primery);
+    font-family: "Montserrat", sans-serif;
+}
+
+marquee a {
+    text-decoration: none;
+    color: var(--marq-link-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--links-color-in-chart);
+}
+
+a:visited {
+    color: var(--color-sec);
+}
+
+a:hover {
+    text-shadow: 0 0 5px #5f2a84df;
+}
+
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+main {
+    width: 100%;
+    height: calc(100vh - 92px);
+    overflow-y: auto;
+}
+
+.OpenBox {
+    width: 100%;
+    height: 320px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 2;
+}
+
+.OpenBox .marquee_Box {
+    width: 80%;
+    position: absolute;
+    top: 5px;
+    height: 60px;
+    margin: auto;
+}
+
+.OpenBox .OpenBTN {
+    position: absolute;
+    bottom: -30px;
+    border-radius: 7px;
+    padding: 5px;
+    border: none;
+    font-size: large;
+    color: var(--Chart-BTN-C);
+    backdrop-filter: blur(5px);
+    background: var(--Chart-BTN-B);
+    font-weight: 700;
+    box-shadow: var(--open-btn-glow1), var(--open-btn-glow2);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    position: relative;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background: var(--Chart-Cont-Back);
+    overflow-y: scroll;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+.container .card {
+    float: left;
+    margin-left: 27px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    border-radius: 10px;
+    width: 340px;
+    min-height: 310px;
+    max-height: 600px;
+    border: var(--Chart-Card);
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(200, 240, 255, 0.3);
+}
+
+.container .card .card-header {
+    padding: 2px;
+    font-size: 20px;
+    height: 30px;
+    letter-spacing: 1px;
+    background: var(--Chart-Card-Header);
+    color: var(--Chart-Card-Header-C);
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.container .card .card-body {
+    backdrop-filter: blur(10px);
+    background: var(--Chart-Card-Body);
+    padding: 10px;
+    font-weight: bold;
+    min-height: 270px;
+}
+
+.container .card .card-body ul li {
+    list-style: none;
+    text-transform: capitalize;
+    margin: 5px;
+}
+
+.container .card .card-footer {
+    background: var(--Chart-Card-Footer);
+    height: 30px;
+}
+
+.container .card .card-footer button {
+    border-radius: 4px;
+    padding: 2px 10px;
+    background: var(--background-gar-chart-btn);
+    color: var(--chart-foot-btn-color);
+}
+
+.AI-Bot,
+.AI_Open {
+    position: fixed;
+    bottom: 45px;
+    right: 15px;
+}
+
+.AI-Bot {
+    border: 1px solid var(--chart-ai-bot-border);
+    background: var(--chart-ai-bot-bakcground);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    height: 300px;
+    width: 250px;
+    z-index: 11;
+    overflow: hidden;
+    display: none;
+}
+
+.AI-Bot .AI-Header {
+    padding: 5px;
+    height: 30px;
+}
+
+.AI-Bot .AI-Body {
+    padding: 5px;
+    height: 40px;
+    width: 100%;
+    height: 76%;
+}
+
+.AI-Bot .AI-Footer {
+    padding: 5px;
+    height: 40px;
+    width: 100%;
+}
+
+.AI_Open {
+    font-size: 50px;
+    z-index: 15;
+}
+
+.AI_Open span {
+    position: absolute;
+    font-size: 23px;
+    color: var(--word-color);
+    font-weight: 800;
+}
+
+/* 
+.scrolling-text {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: scroll-left 10s linear infinite alternate-reverse;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(20%);
+    }
+
+    100% {
+        transform: translateX(-20%);
+
+    }
+} */

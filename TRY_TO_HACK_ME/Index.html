@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try to Hack Me</title>    <link rel="stylesheet" href="STYLES/Style.css">
+    <link rel="stylesheet" href="/GLOBAL//STYLES/Template.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Try to Hack Me</h1>
+        </nav>
+    </header>
+
+    <main>
+        <section id="intro">
+            <h2>Welcome to the Hack Me Challenge</h2>
+            <p>Can you complete all the challenges? Test your skills and learn a thing or two along the way.</p>
+            <button onclick="startChallenge()">Start Challenge</button>
+        </section>
+
+        <section id="hackTerminal" class="hidden">
+            <h3>Terminal:</h3>
+            <div id="terminalOutput"></div>
+            <input type="text" id="userInput" onkeydown="handleCommand(event)">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Try to Hack Me | All rights reserved.</p>
+    </footer>
+
+    <script src="SCRIPTS/Script.js"></script>
+    <script src="/GLOBAL/SCRIPTS/Thame.js"></script>
+</body>
+</html>

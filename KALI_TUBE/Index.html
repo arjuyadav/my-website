@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Created by kali (arju) copyright 2024 , create for parsonal use" />
+    <title>KALI VIDEO TUBE</title>
+    <link rel="stylesheet" href="/GLOBAL/STYLES/Utlity.css">
+    <link rel="stylesheet" href="STYLES/Style.CSS" />
+    <link rel="icon" href="/GLOBAL/IMGS/favicon.png" />
+</head>
+
+<body>
+    <nav class="navbar">
+
+        <div class="site">
+            <div class="toggle-btn">
+                <img class="invert" src="/GLOBAL/IMGS/ICON/hamburger.svg" alt="">
+            </div>
+            <img height="25" src="/GLOBAL/IMGS/ICON/KALI VIDEO DARK.png" class="logo" alt="KALI logo" />
+        </div>
+
+        <div class="search-box">
+            <input type="search" id="searchBar" class="search-bar" placeholder="Search" name="search" id="search" />
+            <button title="search" id="searchBtn" onclick="search()" class="search-btn">
+                <img src="/GLOBAL/IMGS/ICON/search.png" alt="search" />
+            </button>
+            <button class="voice-btn" title="search with your voice">
+                <img src="/GLOBAL/IMGS/ICON/mic.png" alt="voice" />
+            </button>
+        </div>
+
+        <div class="user_options">
+            <img src="/GLOBAL/IMGS/ICON/video.png" class="icon" alt="Upload Video" />
+            <img src="/GLOBAL/IMGS/ICON/grid.PNG" class="icon" alt="Options" />
+            <img src="/GLOBAL/IMGS/ICON/bell.png" class="icon" alt="Notifications" />
+            <div class="user-dp">
+                <img class="invert" src="/GLOBAL/IMGS/favicon.png" alt="profile" />
+            </div>
+        </div>
+    </nav>
+    <!--side bar-->
+    <div class="side_bar">
+        <a href="#" class="links">
+            <img src="/GLOBAL/IMGS/ICON/home.png" alt="home" />
+            <h5>Home</h5>
+        </a>
+        <a onclick="themechange()" href="#" class="links">
+            <img src="/GLOBAL/IMGS/ICON/explore.PNG" alt="explore" />
+            <h5>Explore</h5>
+
+        </a>
+        <a href="#" class="links">
+            <img src="/GLOBAL/IMGS/ICON/subscription.png" alt="subscription" />
+            <h5>Subscription</h5>
+        </a>
+        <hr class="seperator" />
+
+        <a href="#" class="links">
+            <img src="/GLOBAL/IMGS/ICON/library.png" alt="library" />
+            <h5>Library</h5>
+        </a>
+        <a href="#" class="links">
+
+            <img src="/GLOBAL/IMGS/ICON/history.PNG" alt="history" />
+            <h5>History</h5>
+        </a>
+        <a href="#" class="links">
+            <img src="/GLOBAL/IMGS/ICON/your-video.png" alt="your-video" />
+            <h5>Your Video</h5>
+        </a>
+        <a href="#" class="links">
+            <img src="/GLOBAL/IMGS/ICON/watch-later.png" alt="watch-later" />
+            <h5>Watch Later</h5>
+        </a>
+        <a href="#" class="links">
+            <img src="/GLOBAL/IMGS/ICON/liked video.png" alt="liked" />
+            <h5>Like Video</h5>
+        </a>
+        <a href="#" class="links">
+            <img src="/GLOBAL/IMGS/ICON/showmore.png" alt="show" />
+            <h5>Show More</h5>
+        </a>
+    </div>
+
+    <!-- filters -->
+    <div id="filters">
+    </div>
+
+    <!-- content -->
+    <div class="video-container" id="kvtvideo"></div>
+    <script src="SCRIPTS/Script.js"></script>
+    <script src="/GLOBAL/SCRIPTS/Thame.js"></script>
+</body>
+
+</html>

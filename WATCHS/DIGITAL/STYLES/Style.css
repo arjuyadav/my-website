@@ -1,0 +1,16 @@
+@import url(/GLOBAL/STYLES/Colors.css);
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+    width: 100%;
+    background: var(--body-back);
+    user-select: none;
+}
+
+#clock {
+    font-size: 3em;
+    font-family: 'monospace', 'emoji';
+    color: var(--clock-color);
+}

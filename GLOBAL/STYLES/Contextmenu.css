@@ -1,0 +1,43 @@
+/* contextmenu style */
+.Contextmenu {
+    background:var(--background-sec);
+    color: var(--color-sec);
+    padding: 4px;
+    margin: 0;
+    position: absolute;
+    width: 173px;
+    min-height: 30px;
+    max-height: 90vh;
+    border-radius: 14px;
+    backdrop-filter: blur(10px);
+    filter: brightness(80%);
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.Contextmenu ul li a {
+    text-decoration: none;
+    color: var(--color-primery);
+}
+
+.Contextmenu ul i {
+    width: 170px;
+    display: flex;
+    border: var(--border);
+}
+
+.Contextmenu ul li {
+    list-style: none;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 3px;
+}
+
+#Options {
+    display: none;
+}
+
+.Contextmenu ul li:hover {
+    background:var(--hover-background-sec);
+}

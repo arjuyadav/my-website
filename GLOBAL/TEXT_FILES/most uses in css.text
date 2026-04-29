@@ -1,0 +1,38 @@
+                  \*  css */
+
+     for selection selected text color background:etc.
+
+Element :selection{
+  color: (value);
+  background:rgba(value);
+}
+
+     for hover color size background:opacity etc.
+
+Element :hover{
+    background: rgba(value);
+}
+
+     for Placeholder size ,color etc.
+
+Element :Placeholder{
+    background: rgba(red , blue , green);
+}
+
+     for checkbox color etc.
+
+Element {
+    accent-color: #ff0000;
+}
+
+Element {
+   box-shadow: 0 10px 30px 20px rgba(122, 8, 167, 0.9), 0 10px 30px 20px rgba(122, 8, 167, 0.9);
+}
+
+background:mlty
+
+Element {
+
+    background: linear-gradient(0deg, transparent, transparent, #ff2770, #ff2770, #ff2770);
+
+}

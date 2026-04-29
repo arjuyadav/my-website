@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="IMG/favicon.ico">
+    <link rel="stylesheet" href="/GLOBAL/STYLES/Colors.css">
+    <title>checkbox</title>
+    <style>
+        /* size change  */
+        /* .switch width: ?; , height:?; , .switch::before top: ?; transform: translate(?); */
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 45px;
+            height: 24px;
+            background:var(--switch-back);
+            border-radius: 34px;
+        }
+
+        .switch::before {
+            content: "";
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background:var(--background);
+            top: 4px;
+            left: 4px;
+            transition: 0.3s;
+        }
+
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        input[type="checkbox"]:checked+.switch {
+            background: var(--checked-back);
+            transition: 0.5s;
+        }
+
+        input[type="checkbox"]:checked+.switch::before {
+            transform: translateX(22px);
+        }
+    </style>
+</head>
+
+<body><input type="checkbox" title="on/of" id="toggle" /><label for="toggle" class="switch"
+        style="cursor: pointer"></label>
+</body>
+
+</html>

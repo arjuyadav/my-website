@@ -1,0 +1,56 @@
+@import url(Oth.css);
+
+header nav {
+    /* color: var(--kali-color); */
+    display: flex;
+    background: var(--nav-back);
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    padding: 5px;
+    overflow: hidden;
+}
+
+header nav button {
+    color: var(--thame-Btn-color);
+    background: var(--thame-Btn-back);
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+header nav h1 {
+    font-weight: bolder;
+    font-size: 30px;
+    color: var(--Logo1-color);
+}
+
+header nav h1 b {
+    color: var(--Logo2-color);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    height: 40px;
+    background: var(--footer-back);
+    color: var(--footer-color);
+}
+
+.version {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background: var(--background);
+    color: var(--version-color);
+    font-weight: bold;
+}
+
+.version a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--version-color);
+}

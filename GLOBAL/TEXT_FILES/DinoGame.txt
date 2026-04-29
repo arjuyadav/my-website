@@ -1,0 +1,22 @@
+web hacks
+for 🔅 google dino game ⚙️ hack 
+
+right click > GO to inspact > GO to console log type
+past 1st & 2nd & 3th 
+Hit the Enter button
+
+copy this 👇
+
+1st = hack infinite gameOver==   
+Runner.prototype.gameOver = function(){}
+
+
+copy this 👇
+
+2nd = hack not gameOver==   
+Runner.instance_.gameOver = ()=>{};
+
+copy this 👇
+
+3th = hack bost speed==      
+Runner.instance_.setSpeed(200);

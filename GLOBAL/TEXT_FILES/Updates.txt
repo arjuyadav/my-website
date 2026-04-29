@@ -1,0 +1,10 @@
+recorder
+    <span id="clock"></span>
+    <script>
+        let seconds = 0;
+        function updateSec() {
+            seconds++;
+            document.getElementById('clock').textContent = `${seconds}seconds`;
+        }
+        setInterval(updateSec, 1000);
+    </script>

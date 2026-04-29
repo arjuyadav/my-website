@@ -1,0 +1,55 @@
+@import url(/GLOBAL/STYLES/Colors.css);
+
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0;
+    background: var(--body-back);
+    color: var(--tryToHackMe-body-color);
+}
+
+
+#intro {
+    text-align: center;
+    padding: 50px;
+}
+
+button {
+    padding: 10px 20px;
+    background: var(-tryToHackMe-body-color);
+    border: none;
+    color: var(--word-color);
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: var(--tryToHackMe-Btn-color-Hov);
+}
+
+#hackTerminal {
+    display: none;
+    background: var(--word-color);
+    color: var(--word-color);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+input {
+    background: 1a1a1a;
+    color: var(--word-color);
+    border: none;
+    font-size: 18px;
+    width: 100%;
+    padding: 10px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.hidden {
+    display: none;
+}

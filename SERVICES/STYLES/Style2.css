@@ -1,0 +1,285 @@
+* {
+    font-family: arial;
+    user-select: none;
+    cursor: default;
+}
+
+body {
+    background: linear-gradient(-45deg,#3d3d3d 30%, #363636 50%, #444444 100%);
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+    width: 10px;
+    height: 12px;
+}
+
+.outer {
+    min-height: 2200px;
+    height: auto;
+    width: 1000px;
+    margin: 0px auto;
+    position: relative;
+    margin-bottom: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #17d543;
+}
+
+header {
+    height: 180px;
+    width: 1000px;
+    background: #222;
+}
+
+.logo {
+    height: 180px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+
+.title {
+    height: 180px;
+    width: 820px;
+    float: right;
+    text-align: center;
+    color: #ffffff;
+}
+
+.title .heading {
+    padding-top: 40px;
+    font-size: 42px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.title .sub_heading {
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    height: 50px;
+    width: 1000px;
+    background: #000;
+    line-height: 50px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    height: 50px;
+    width: 121px;
+    cursor: pointer;
+    text-align: center;
+    border-right: 1px solid #36f814;
+}
+
+nav ul li a {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+marquee a:hover {
+    color: #1eff00e3;
+}
+
+marquee a:visited {
+    color: #bde724ac;
+}
+
+.latest_news {
+    height: 25px;
+    width: 1000px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.latest_news a {
+    font-weight: bold;
+    color: #36f814;
+    background: rgba(0, 0, 0, 0.749);
+}
+
+.join_us {
+    height: 50px;
+    width: 1000px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.join_us a {
+    background: #0303cb;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.online {
+    height: 60px;
+    width: 1000px;
+}
+
+.box {
+    height: 56px;
+    width: 246px;
+    margin: 2px;
+    float: left;
+    text-align: center;
+    font-size: 20px;
+    box-shadow: 0 2px 3px rgba(5, 2, 78, 0.934);
+    text-shadow: 0 3px 2px green;
+}
+
+.online .box a {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#container {
+    min-height: 500px;
+    height: auto;
+    width: 1000px;
+}
+
+.card {
+    min-height: 250px;
+    height: auto;
+    width: 300px;
+    border: 2px solid #302b88;
+    box-shadow: 0 1px 7px rgb(11, 228, 105);
+    float: left;
+    margin: 15px;
+}
+
+#card_header {
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    color: #15058ffa;
+    font-weight: bold;
+    font-size: 22px;
+    background: #05b7bae7;
+    border-bottom: 2px solid rgb(43, 255, 188);
+    box-shadow: 1px 4px 3px black;
+}
+
+#card_body {
+    display: flex;
+    align-items: center;
+    background: #15283078;
+    color: white;
+    height: 250px;
+    width: 100%;
+}
+
+#card_body ul li {
+    margin: 0 0 0 35px;
+    height: 30px;
+    list-style: devanagari;
+    text-transform: capitalize;
+}
+
+#card_body ul li a {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    color: #13dc3fda;
+}
+
+#card_body ul li a:hover {
+    color: #44f786;
+}
+
+#card_body ul li a:visited {
+    color: #bde724ac;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 300px;
+    width: 100%;
+    background: #111111;
+}
+
+.pTime {
+    color: rgb(0, 255, 13);
+    position: relative;
+    left: 115px;
+    top: 50px;
+    font-size: large;
+    font-weight: 800;
+}
+
+.watch {
+    position: relative;
+    top: 50px;
+}
+
+.version {
+    padding: 0 5px;
+    text-transform: capitalize;
+    height: 22px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #17d543;
+    border: 1px solid rgb(20, 223, 233);
+}
+
+.version_name {
+    margin: 0;
+    font-weight: 500;
+}
+
+.version-head {
+    font-weight: bolder;
+}
+
+#container_2 {
+    background:222;
+    width: 1000px;
+    height: 100vh;
+    position: absolute;
+    left: 0px;
+    display: none;
+    opacity: 0;
+    text-align: center;
+    justify-content: center;
+    top: 10.5%;
+    z-index: 2;
+    transition: all 0.7s ease;
+}
+
+#Ratting_On_Website {
+    width: 480px;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    /* overflow: hidden; */
+}
+
+#close {
+    position: absolute;
+    top: -51px;
+    left: 374px;
+    border: none;
+    height: 50px;
+    width: 120px;
+    padding: 0;
+    font-size: 3rem;
+    background: #000;
+    color: white;
+}

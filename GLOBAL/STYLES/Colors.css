@@ -1,0 +1,228 @@
+:root,
+html[data-theme="dark"] {
+    /* height */
+    --Height-desktop: calc(100% - 45px);
+    --border-radius: 0.5rem;
+    --Height-windows-content: calc(100% - 25px);
+    --Main-height: 15px;
+    /* width */
+    --Main-width: 15px;
+    --border-radius: 0.5rem;
+
+    /* ************** All FIles styles ************** */
+    --version-color: #04ff00;
+    --Net-checkerMain: #00ff9c;
+    --tryToHackMe-body-color: #33ff33;
+    --tryToHackMe-Btn-color-Hov: #28a745;
+    /* Scroll Bar Colors */
+    --scroll-bar: #00000074;
+    --scroll-thumb: rgba(198, 50, 224, 0.71);
+    --scroll-track: rgba(9, 21, 15, 0.494);
+    --scroll-button: rgba(26, 11, 22, 0.645);
+
+    /* backgrounds */
+    --background: rgb(0, 0, 0);
+    --body-back: #2f3542;
+
+    /* Colors */
+    --color: #000000;
+
+    /* ********* Template.css ********/
+    /* backgrounds */
+    --nav-back: #35424a;
+    --thame-Btn-back: #ff00a2;
+    --footer-back: #35424a;
+    --footer-color: #ffffff;
+
+    /* Colors */
+    --Text-Color: #ffffff;
+    --Logo1-color: #ffffffdb;
+    --Logo2-color: #2ff6a3;
+    --thame-Btn-color: #f7ff5d;
+
+    /* ********* Check Box **************** */
+    /* backgrounds */
+    --switch-back: #ccc;
+    --checked-back: #2196f3;
+
+    /* ********* Dragon OS **************** */
+    /* backgrounds */
+    --windows-background: transparent;
+    --window-control-background: transparent;
+    --background-gargent-Desktop: linear-gradient(15deg, #1e1e1e, #3b3b3b);
+    --background-gargent-taskbar: linear-gradient(45deg, #2d2c2caa, #2e2d2dd2, #2a2a2ab3);
+    --background-gargent-sec: linear-gradient(30deg, #1e1e1ecd, #161515e3);
+    --background-gargent-taskbar: linear-gradient(45deg, #2d2c2caa, #2e2d2dd2, #2a2a2ab3);
+
+    /* colors */
+    --focusThewindow-border-color: saddlebrown;
+
+    /* Border Or Shadow */
+    --windows-shadow: 0 3px 12px rgba(95, 146, 162, 0.9);
+    --border-taskbar: 1px solid rgba(128, 128, 128, 0.336);
+
+    /* Hover */
+    --hover-background-primery: #424242;
+    --hover-Icon-background: #f4f4f420;
+
+    /* ********* Games typing **************** */
+    /* colors */
+    --primary-color: #8a31e2;
+    --secondary-color: #4f616368;
+    --word-color: #000;
+    /* Backgrounds */
+    --gradient-color: #1067e8d0;
+    --button-back: #f5f5f5cd;
+    --Nav-color: linear-gradient(315deg, #4a4848d3 0%, #323d3eeb 100%);
+
+    /* Border and shadows */
+    --overlay-color: #1f1a1bd7;
+    /* ********* Chat Bot **************** */
+    /* colors */
+    --Body-whitesmoke-color: whitesmoke;
+    --User-Input-color: #f4f4f4;
+    --Chat-Send-color: wheat;
+    --message-link-color: bisque;
+
+    /* Backgrounds */
+    --chat-Box-Back: #222;
+    --chat-Content-Back: #111;
+    --Chat-Send: #4caf7d;
+    --Chat-User: #444;
+    --Chat-bot: #363434;
+    --scroll-bar-chatbot: #111;
+    --scroll-thumb-chatbot: black;
+    /* Selections */
+    --Selec-color-Back: #48fea0;
+
+    /* Border Or Shadow */
+    --ChatBox-Shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+    /* hov */
+    --Hover-Chat-Send: #4caf7d;
+
+
+    /* *********  all for only  PlayList **************** */
+    --main-video-container: #2c2929;
+    --main-vid-title: #1be31ec5;
+    --video-list-container-border: #262222cc;
+    --video-list-container-Back: #2d2c2cba;
+    --video-list-container-Scroll-thumb: #0aeb60;
+    --video-list-container-Scroll-thumb-hov: #00ff62a3;
+    --video-list-border: #02ff3d8a;
+    --video-list-Active: #000000c6;
+    --list-title: #18ef4a;
+
+    /* *********************** all for only kali-tube ****************** */
+    --kali-tube-color: #ffffff;
+    --kali-tube-seccolor: #f0f0f0;
+    --kali-tube-bgcolor: aqua;
+    --kali-tube-othcolor: black;
+    --kali-tube-seperator: #dbdbdb;
+    --kali-tube-text: #242424;
+    --kali-tube-sectext: #979797;
+    --kali-tube-othtext: #979797;
+    --kali-tube-borders: #dbdbdb;
+    --kali-tube-secborders: #dbdbdb;
+    --kali-tube-filters: #242424;
+    --kali-tube-secfilters: #242424;
+    --kali-tube-hover: rgba(0, 0, 0, 0.1);
+    --kali-tube-sechover: rgba(0, 0, 0, 0.1);
+    --kali-tube-active: rgb(0, 0, 0);
+    --kali-tube-secactive: linear-gradient(50deg, #46c14e, #b6fff9, #30d0fc, #00ff54);
+    --kali-tube-color-dark: #131313;
+    --kali-tube-seccolo-dark: #000000;
+    --kali-tube-othcolor-dark: #974964;
+    --kali-tube-seperator-dark: #00d5f0;
+    --kali-tube-text-dark: #43ff71;
+    --kali-tube-sectext-dark: #10958a;
+    --kali-tube-othtext-dark: #b03b3b;
+    --kali-tube-borders-dark: #25554e;
+    --kali-tube-secborders-dark: #e078e5;
+    --kali-tube-filters-dark: #79c6f3;
+    --kali-tube-secfilters-dark: #423838;
+    --kali-tube-hover-dark: rgb(0 212 134);
+    --kali-tube-sechover-dark: rgba(0, 0, 0, 0.1);
+    --kali-tube-active-dark: rgb(0 0 0);
+    --kali-tube-secactive-dark: linear-gradient(0deg, #46c14e, #b6fff9, #30d0fc, #00ff54);
+
+    /* *********  all for only Player **************** */
+    --Playlist-heading: #95fb95;
+    --Playlist-main-vid: #555;
+    --Playlist-main-vid-title: #39bc67;
+    --Playlist-vidlist-thumb: #666;
+    --Playlist-videolist-vid: #517e5a;
+    --Playlist-videolist-vid-hover: #25b141;
+    --Playlist-videolist-vid-hover-color: #25b141;
+    --Playlist-videolist-vid-active: #299fb9;
+    --Playlist-videolist-vid-tilte: #080747;
+    /* *********  all for only  Login **************** */
+    --login-body: #23242a;
+    --login-Box: #1c1c1c;
+    --login-before-gradient: linear-gradient(0deg, transparent, transparent, #45f3ff, #45f3ff, #45f3ff);
+    --login-after-gradient: linear-gradient(0deg, transparent, transparent, #45f3ff, #45f3ff, #45f3ff);
+    --login-borderline-after-gradient: linear-gradient(0deg, transparent, transparent, #ff2770, #ff2770, #ff2770);
+    --login-borderline-Before-gradient: linear-gradient(0deg, transparent, transparent, #ff2770, #ff2770, #ff2770);
+    --login-input-box-span: #8f8f8f;
+
+    /* *********  all for only  Rating **************** */
+    --ratting-h2: #ff991c;
+    --ratting-form: #1d363a;
+    --ratting-form-border: rgba(91, 112, 119, 0.489);
+    --ratting-form-gradient: linear-gradient(-120deg, #aa09efe2, #ae16ffe8, #269affe9, #00ffb7e8);
+    --ratting-focus-input: #4444449b;
+    --ratting-hov-input: #33333364;
+    --ratting-input-placeholder: rgba(0, 255, 255, 0.900);
+    --ratting-input-Back: #20202095;
+    --ratting-input-border: rgba(192, 192, 192, 0.862);
+    --ratting-Btn-Submit-hov: #36f73c;
+    --ratting-Btn-Submit-hov-color: rgb(40, 13, 81);
+    --ratting-Btn-Submit-color: beige;
+    --ratting-Btn-Submit-Back: #05c80c;
+    --ratting-Btn-Submit-Border: rgba(192, 192, 192, 0.696);
+    --ratting-Btns-stars-color: aqua;
+    --ratting-Btns-stars-color-hov: rgb(127, 244, 244);
+    --ratting-Btns-stars-color-Focus: rgb(244, 242, 127);
+
+    /* *********  all for only chart **************** */
+    --chart-ai-bot-border: rgba(0, 0, 0, 0.5);
+    --chart-ai-bot-bakcground: 11111166;
+
+    /* *********  all for only gernal Watch **************** */
+    --gernal-point: red;
+    --gernal-watch-back: rgb(44, 39, 34);
+    --gernal-watch-border: rgb(38, 84, 84);
+    --gernal-watch-hour-back: #944;
+    --gernal-watch-minute-back: #393;
+    --gernal-watch-second-back: rgb(87, 87, 247);
+}
+
+html[data-theme="light"] {
+    /* ************** All FIles styles ************** */
+    /* Scroll Bar Colors */
+    --scroll-bar: #111;
+    --scroll-thumb: rgb(65, 65, 65);
+    --scroll-track: rgb(146, 141, 141);
+    --scroll-button: rgb(6, 100, 231);
+
+    /* Colors */
+    --color: #000000;
+
+    /* backgrounds */
+    --background: rgb(255, 255, 255);
+
+    /* ********* Template.css *************** */
+    /* backgrounds */
+    --nav-back: #f3f3f3;
+    --thame-Btn-back: #7a3cffe7;
+    --footer-back: #f4f4f4;
+
+    /* Colors */
+    --Text-Color: #ffffff;
+    --Log1-color: #212020e6;
+    --Log2-color: #400a92;
+    --thame-Btn-color: #d0ff00;
+
+    /* ********* Dragon OS **************** */
+    /* backgrounds */
+}

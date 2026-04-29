@@ -1,0 +1,105 @@
+body {
+    background: 222;
+    height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+main {
+    position: absolute;
+    height: 33vw;
+    width: 85vw;
+    border-radius: 5px;
+    flex-direction: column;
+    background: #111;
+    box-shadow: 0 0 5vw #31c3f4;
+    transition: box-shadow 0.8s ease;
+    overflow: hidden;
+}
+
+main h1 {
+    -webkit-background-clip-: "text";
+    -webkit-text-fill-color: transparent;
+    font-size: 15vw;
+    margin-bottom: 23px;
+    font-weight: bold;
+    transition: all .8s ease;
+    animation: scaleAnim .8s forwards;
+}
+
+@keyframes scaleAnim {
+    from {
+        text-shadow: 0 0 0 rgba(21, 247, 255, 0.569);
+        transform: scale(.7);
+    }
+    
+    to {
+        text-shadow: 0 0 100vh rgba(126, 21, 255, 0.863);
+        transform: scale(1);
+    }
+}
+
+main .MyWebsites {
+    position: absolute;
+    max-height: 40px;
+    min-height: 20px;
+    height: auto;
+    width: 100%;
+    left: 0;
+    overflow: hidden;
+    bottom: 0;
+    gap: 4px;
+}
+
+main .MyWebsites a:nth-child(2) {
+    background: linear-gradient(24deg, rgb(101 199 190), rgb(40 112 136), rgb(6 0 244));
+}
+
+main .MyWebsites a:nth-child(3) {
+    background: linear-gradient(315deg, rgb(11 142 255), rgb(96 96 241), rgb(67 188 103));
+}
+
+main .MyWebsites a {
+    background: linear-gradient(159deg, rgb(196, 3, 54), rgb(221, 236, 241), rgb(30, 165, 0));
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 100%;
+    font-weight: bold;
+    color: white;
+    padding: 7px 10px;
+    text-shadow: 0 0 5px rgb(0, 0, 0);
+    transition: all 0.8s ease;
+}
+
+.AI-container {
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    right: -300px;
+    top: 0;
+    background: #051313cf;
+    backdrop-filter: blur(5px);
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+    transition: all 0.6s ease;
+}
+
+.AI-container h2 {
+    color: white;
+}
+
+.AI_Window_open_btn {
+    position: absolute;
+    padding: 8px;
+    left: -32px;
+    top: 48vh;
+    font-weight: bold;
+    background: #31c3f4;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border: none;
+    transition: background .4s ease-in-out;
+}
