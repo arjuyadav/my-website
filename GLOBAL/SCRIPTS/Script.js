@@ -33,31 +33,3 @@ document.addEventListener('click',()=>{
         container.classList.remove('Show-Ai-in-Welcome');
     }
 })
-// let User_Name = prompt("Enter Your Name If You Can Listen Your Name With Kali: ")
-let User_Name = 'Arju'
-User_Name.toString()
-
-function Speak(text) {
-    let text_speak = new SpeechSynthesisUtterance(text)
-    text_speak.rate = 1
-    text_speak.pitch = .9 + Math.random()
-    text_speak.volume = 1
-    text_speak.lang = "hi-GB"
-    window.speechSynthesis.speak(text_speak)
-}
-
-let Great = [
-    `Hello ${User_Name}, Welcome to our website!`,
-    `Hello ${User_Name}, Welcome in Kali.`,
-    `Hi ${User_Name} G, Welcome in Kali.`,
-    `thanks for visit my site ${User_Name} G.`,
-    `Kali coalab's With ${User_Name}.`,
-    `${User_Name} G You are the proude owener of kali.`,
-    `Hi ${User_Name} how are you`,
-    `Hey ${User_Name} What's Up`,
-    `Hi ${User_Name} let's enjoy our site.`,
-]
-if (User_Name) {
-    text = Great[Math.ceil(Math.random() * (Great.length - 1))]
-    Speak(text)
-}

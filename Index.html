@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=7" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome Page kali created by Arju Yadav this develop for coder's and Hacker's | this is start up page start learning from to clink any link | My websites suggestions | mlty try To Hacking features and tutorials available | i am student and creating for just test trying to creating a real world website.">
+    <meta name="description"
+        content="Welcome Page kali created by Arju Yadav this develop for coder's and Hacker's | this is start up page start learning from to clink any link | My websites suggestions | mlty try To Hacking features and tutorials available | i am student and creating for just test trying to creating a real world website.">
     <title>Welcome To KALI - world Page | created By Arju Yadav | small AI Features</title>
     <link rel="icon" href="/GLOBAL/IMGS/favicon.png" />
     <link rel="stylesheet" href="GLOBAL/STYLES/Style.css">
@@ -16,7 +17,7 @@
     <main class="flex-center">
         <h1>Welcome</h1>
         <menu class="MyWebsites flex-between">
-            <a href="/HOME/">Continue With Normal Mode</a><a href="/SERVICES/">Continue With Premium Mode</a><a href="/OS_MODULE/">Continue With OS Mode</a>
+            <a href="/HOME/">Continue With Normal Mode</a><a href="/OS_MODULE/">Continue With OS Mode</a>
         </menu>
     </main>
     <aside class="AI-container flex-center">
@@ -24,6 +25,36 @@
         <div class="AI_controls"></div>
         <div class="AI_Window_open_btn flex-center">AI</div>
     </aside>
+    <script>
+        // let User_Name = prompt("Enter Your Name If You Can Listen Your Name With Kali: ")
+        let User_Name = 'Arju'
+        User_Name.toString()
+
+        function Speak(text) {
+            let text_speak = new SpeechSynthesisUtterance(text)
+            text_speak.rate = 1
+            text_speak.pitch = .9 + Math.random()
+            text_speak.volume = 1
+            text_speak.lang = "hi-GB"
+            window.speechSynthesis.speak(text_speak)
+        }
+
+        let Great = [
+            `Hello ${User_Name}, Welcome to our website!`,
+            `Hello ${User_Name}, Welcome in Kali.`,
+            `Hi ${User_Name} G, Welcome in Kali.`,
+            `thanks for visit my site ${User_Name} G.`,
+            `Kali coalab's With ${User_Name}.`,
+            `${User_Name} G You are the proude owener of kali.`,
+            `Hi ${User_Name} how are you`,
+            `Hey ${User_Name} What's Up`,
+            `Hi ${User_Name} let's enjoy our site.`,
+        ]
+        if (User_Name) {
+            text = Great[Math.ceil(Math.random() * (Great.length - 1))]
+            Speak(text)
+        }
+    </script>
     <script src="/GLOBAL/SCRIPTS/Get_Random_color.js"></script>
     <script src="/GLOBAL/SCRIPTS/Script.js"></script>
 </body>
